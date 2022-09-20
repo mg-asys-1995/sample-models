@@ -1,5 +1,27 @@
 {
-  "name": "John Doe",
-  "age": 24,
-  "emailAddress": "john.doe@domain.com"
+  "definitions": {
+    "person": {
+      "description": "A person who has been involved in creating or maintaining this package.",
+      "type": ["object", "string"],
+      "required": ["name"],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "email": {
+          "type": "string",
+          "format": "email"
+        }
+      }
+    }
+  },
+  "properties": {
+    "author": {
+      "$ref": "#/definitions/person"
+    }
+  }
 }
