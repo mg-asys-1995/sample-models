@@ -3,11 +3,7 @@
   "title": "JSON schema for NPM package.json files",
   "type": "object",
   "required": ["name"],
-  "patternProperties": {
-    "^[^*]+$": {
-      "$ref": "#/properties"
-    }
-  },
+  "additionalProperties": false,
   "properties": {
     "name": {
       "type": "string"
