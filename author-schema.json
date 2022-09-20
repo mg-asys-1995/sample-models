@@ -4,7 +4,7 @@
   "definitions": {
     "person": {
       "description": "A person who has been involved in creating or maintaining this package.",
-      "type": ["object", "string"],
+      "type": ["object"],
       "required": ["name"],
       "properties": {
         "name": {
@@ -18,7 +18,8 @@
           "type": "string",
           "format": "email"
         }
-      }
+      },
+      "additionalProperties": false
     }
   },
   "type": "object",
@@ -27,5 +28,6 @@
     "author": {
       "$ref": "#/definitions/person"
     }
-  }
+  },
+  "additionalProperties": false
 }
