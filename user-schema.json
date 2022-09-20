@@ -1,4 +1,6 @@
 {
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "JSON schema for NPM package.json files",
   "definitions": {
     "person": {
       "description": "A person who has been involved in creating or maintaining this package.",
@@ -17,6 +19,13 @@
           "format": "email"
         }
       }
+    }
+  },
+  "type": "object",
+  "patternProperties": {
+    "^_": {
+      "description": "Any property starting with _ is valid.",
+      "tsType": "any"
     }
   },
   "properties": {
