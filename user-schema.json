@@ -28,6 +28,7 @@
       "tsType": "any"
     }
   },
+"required":["author"],
   "properties": {
     "author": {
       "$ref": "#/definitions/person"
