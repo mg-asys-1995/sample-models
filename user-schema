@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "JSON schema for NPM package.json files",
+  "type": "object",
+  "required": ["name"],
+  "patternProperties": {
+    "^[^*]+$": {
+      "$ref": "#"
+    }
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "email": {
+      "type": "string",
+      "format": "email"
+    }
+  }
+}
