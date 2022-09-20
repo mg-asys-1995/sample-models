@@ -5,7 +5,7 @@
   "required": ["name"],
   "patternProperties": {
     "^[^*]+$": {
-      "$ref": "#"
+      "$ref": "#/properties"
     }
   },
   "properties": {
