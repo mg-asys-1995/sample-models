@@ -22,13 +22,7 @@
     }
   },
   "type": "object",
-  "patternProperties": {
-    "^_": {
-      "description": "Any property starting with _ is valid.",
-      "tsType": "any"
-    }
-  },
-"required":["author"],
+  "required": ["author"],
   "properties": {
     "author": {
       "$ref": "#/definitions/person"
